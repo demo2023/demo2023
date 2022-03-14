@@ -1,0 +1,229 @@
+
+
+html {
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: sans-serif;
+    background-color: var(--primary-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+
+:root {
+    --primary-color: #fff;
+    --secondary-color: #363535;
+}
+
+
+/*--- グローバルメニュー  start ---*/
+
+.background {
+    padding: 30px 50px;
+}
+
+/* header {
+    display: block;
+} */
+
+.header {
+    display: flex;
+    height: 80px;
+    align-items:  center;
+    /*
+    box-shadow: 0 0 6px #b6b6b6;
+    border-radius: 50px;
+    */
+    padding-right: 40px;
+    padding-left: 40px;
+    justify-content: space-around;
+}
+
+.header h1 {
+    color: var(--secondary-color);
+}
+
+.header nav {
+    margin-left: auto;
+}
+
+.header ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav_list ul li {
+    padding-left: 60px;
+    color: var(--secondary-color);
+}
+
+nav .brand-menu a{
+   font-size: 1.6rem;
+   padding: 1rem 0;
+   text-decoration: none;
+   color: var(--secondary-color);
+}
+
+.hamburger {
+    background-color: transparent;
+    border: 0;
+    color: var(--secondary-color);
+    font-size: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger:focus {
+    outline:  none;
+}
+
+#icon {
+    width: 17px;
+    cursor: pointer;
+    padding-left: 30px;
+    color: var(--secondary-color);
+}
+
+/*---  グローバルメニュー  end   ---*/
+
+
+/*--- トップ　タイトルと名前 start   ---*/
+
+
+.main_top_content {
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+    height: 30rem;
+    margin: 0 auto;
+}
+
+.top_title {
+    max-width: 500px;
+    margin:0 auto;
+}
+
+.top_img {
+    align-items: center;
+}
+
+.top_img img {
+    width: 60%;
+    border-radius: 50%;
+}
+
+.top_title h2 {
+    color: var(--secondary-color);
+}
+
+.top_title p {
+    color: var(--secondary-color);
+}
+
+.demo_btn {
+    margin-top: 40px;
+}
+
+.demo_btn a {
+    color: #fff;
+    background: #7946e0;
+    padding: 15px 30px;
+    border-radius: 45px;
+}
+
+/*--- トップ　タイトルと名前 end   ---*/
+
+
+
+/*   ダークモード時　start   */
+
+.dark-theme {
+    --primary-color: #272727;
+    --secondary-color: #fff;
+}
+
+
+/*   ダークモード時  end  */
+
+
+
+
+
+/*   レスポンシブ start  */
+
+@media screen and (max-width:767px) {
+
+    .nav_list {
+        display: none;
+    }
+
+    .nav_list.show {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+    .nav_list_ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nav_list ul li {
+        padding-left: 0;
+    }
+
+    .nav_list_dark {
+        padding-left: 0px;
+        float: left;
+    }
+
+    #icon {
+        padding-left: 0px;
+        align-items: center;
+    }
+
+    .hamburger {
+        display: inline-block;
+    }
+    
+    .background {
+        padding: 30px;
+    }
+
+    .header {
+        position: relative;
+        height: 60px;
+        padding-right: 25px;
+        padding-left: 25px;
+        display: flex;
+    }
+
+
+    .header h1 {
+        font-size: 1.4rem;
+    }
+    
+    .main_top_content {
+        flex-direction: column-reverse;
+        gap: 5px;
+        align-items: center;
+        text-align: center;
+    }
+
+    
+}
+
+/*   レスポンシブ end  */
