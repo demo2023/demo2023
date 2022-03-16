@@ -127,8 +127,8 @@ a {
 }
 
 .top_img img {
-    width: 100%;
     border-radius: 50%;
+    border: solid 25px #7946e0;
 }
 
 .top_title h2 {
