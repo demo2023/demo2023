@@ -241,7 +241,7 @@ a {
 
     .header {
         position: relative;
-        height: 60px;
+        height: 30px;
         padding-right: 25px;
         padding-left: 25px;
         display: flex;
