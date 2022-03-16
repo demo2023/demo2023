@@ -25,6 +25,8 @@ a {
 :root {
     --primary-color: #fff;
     --secondary-color: #363535;
+    --snsbgprimary-color: #ebe7e7;
+    --snsbgsecondary-color: #494848;
 }
 
 
@@ -69,9 +71,7 @@ a {
     color: var(--secondary-color);
 }
 
-nav .brand-menu a{
-   font-size: 1.6rem;
-   padding: 1rem 0;
+.nav-link a{
    text-decoration: none;
    color: var(--secondary-color);
 }
@@ -92,7 +92,7 @@ nav .brand-menu a{
 #icon {
     width: 17px;
     cursor: pointer;
-    padding-left: 30px;
+    margin-left: 30px;
     color: var(--secondary-color);
 }
 
@@ -102,25 +102,32 @@ nav .brand-menu a{
 /*--- トップ　タイトルと名前 start   ---*/
 
 
-.main_top_content {
-    display: flex;
+.main_contents {
     align-items: center;
     margin-top: 3rem;
-    height: 30rem;
     margin: 0 auto;
+}
+
+.top_main {
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+    height: 30em;
+    align-items: center;
 }
 
 .top_title {
     max-width: 500px;
     margin:0 auto;
-}
-
-.top_img {
     align-items: center;
 }
 
+.top_img {
+
+}
+
 .top_img img {
-    width: 60%;
+    width: 100%;
     border-radius: 50%;
 }
 
@@ -134,6 +141,7 @@ nav .brand-menu a{
 
 .demo_btn {
     margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .demo_btn a {
@@ -147,11 +155,39 @@ nav .brand-menu a{
 
 
 
+
+
+
+/*--- footer sns start  ---*/
+
+.footer_sns {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.footer_sns i {
+    font-size: 1.5em;
+    color: var(--secondary-color);
+    margin: 10px;
+    /* background-color: var(--snsbgprimary-color);
+    padding: 10px;
+    border-radius: 50%; */
+}
+
+
+/*--- footer sns end  ---*/
+
+
+
+
+
 /*   ダークモード時　start   */
 
 .dark-theme {
     --primary-color: #272727;
     --secondary-color: #fff;
+    --snsbgprimary-color: #494848;
+    --snsbgsecondary-color: #d6d2d2;
 }
 
 
@@ -223,7 +259,21 @@ nav .brand-menu a{
         text-align: center;
     }
 
-    
+
+    .top_main {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+   
+    .top_img {
+        max-width: 60%;
+    }
+
+    .footer_sns {
+        padding: 0px;
+        text-align: center;
+    }
+
 }
 
 /*   レスポンシブ end  */
