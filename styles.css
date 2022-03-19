@@ -127,7 +127,7 @@ a {
 }
 
 .top_img img {
-    border-radius: 50%;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     border: solid 25px #7946e0;
 }
 
@@ -210,11 +210,12 @@ a {
         flex-direction: column;
     }
 
-
+    .nav_list.show .nav_list_ul {
+ 
+    }
 
     .nav_list_ul {
-        width: 100%;
-        flex-direction: column;
+
     }
 
     .nav_list ul li {
@@ -245,6 +246,7 @@ a {
         padding-right: 25px;
         padding-left: 25px;
         display: flex;
+        justify-content: space-between;
     }
 
 
