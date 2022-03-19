@@ -1,16 +1,4 @@
-const hamburger = document.getElementById('hamburger');
-const navUL = document.getElementById('nav_list');
-
-hamburger.addEventListener('click', () => {
-    navUL.classList.toggle('show');
-});
-
-$(".nav-link-adjust").click(function(){
-    $(".background").toggleClass("dark_mode");
-  })
-
-
-   var icon = document.getElementById("icon");
+var icon = document.getElementById("icon");
 
    icon.onclick = function (){
        document.body.classList.toggle("dark-theme");
@@ -19,4 +7,12 @@ $(".nav-link-adjust").click(function(){
        }else{
            icon.src = "img/moon.svg";
        }
+    };
+
+    const hamburger = document.getElementById('hamburger');
+    const navUL = document.getElementById('nav-ul');
+
+    hamburger.addEventListener('click', () => {
+        navUL.classList.toggle('show');
     }
+    );
